@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f2">
+  <meta name="description" content="ОСНОВА — демонстрационный сайт строительной компании. Проектирование, строительство загородных домов и отделка. Рассчитайте ориентировочную стоимость своего проекта.">
+  <meta property="og:title" content="ОСНОВА — дома для вашей жизни">
+  <meta property="og:description" content="Продуманная архитектура. Внимание к деталям. От идеи до новоселья.">
+  <meta property="og:type" content="website">
+  <title>ОСНОВА — дома для вашей жизни</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./assets/fonts.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preload" as="image" href="./assets/hero.webp" fetchpriority="high">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="house" viewBox="0 0 48 48"><path d="M6 22 24 7l18 15M11 18v23h26V18M20 41V28h8v13"/></symbol>
+    <symbol id="plan" viewBox="0 0 48 48"><path d="M7 7h34v34H7zM7 21h20V7m0 14v20M7 32h11m20-11h14M16 7v7"/></symbol>
+    <symbol id="interior" viewBox="0 0 48 48"><path d="M10 26V14a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v12M10 24a5 5 0 0 0-5 5v9h38v-9a5 5 0 0 0-10 0v3H15v-3a5 5 0 0 0-5-5ZM10 38v5m28-5v5"/></symbol>
+  </svg>
+
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="ОСНОВА — на главную">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M5 21 20 7l15 14v15H24V25h-8v11H5Z"/></svg></span>
+        <span class="brand-type">ОСНОВА<span>строительная компания</span></span>
+      </a>
+      <nav class="navigation" id="navigation" aria-label="Главная навигация">
+        <a href="#services">Услуги</a><a href="#projects">Проекты</a><a href="#approach">Наш подход</a><a href="#contact">Контакты</a>
+      </nav>
+      <a class="button button-small header-cta" href="#contact">Обсудить проект<svg><use href="#arrow"/></svg></a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="./assets/hero.webp" width="2200" height="1467" alt="Современный загородный дом с панорамными окнами и тёплым светом" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow"><span class="square"></span>Продумано до мелочей</p>
+        <h1 id="hero-title">Дом, в котором<br>хочется <span>жить.</span></h1>
+        <p class="hero-description">От первой линии на чертеже до ключей<br class="desktop-break"> в ваших руках. Создаём пространство для вашей жизни.</p>
+        <button class="button button-orange" type="button" data-open-estimate>Рассчитать стоимость<svg><use href="#arrow"/></svg></button>
+      </div>
+      <div class="hero-bottom"><span>ПРОЕКТИРУЕМ. СТРОИМ. ВОПЛОЩАЕМ.</span><a href="#projects">Вдохновиться проектами <span class="circle-arrow">↓</span></a></div>
+      <div class="hero-note"><span class="status-dot"></span>Индивидуальные дома под ключ</div>
+    </section>
+
+    <div class="principles container" aria-label="Принципы работы">
+      <div><span>01</span><p>Начинаем с вас<small>Дом под ваш ритм жизни</small></p></div>
+      <div><span>02</span><p>Делаем понятным<small>Смета, этапы и сроки заранее</small></p></div>
+      <div><span>03</span><p>Думаем о деталях<small>От фундамента до выключателя</small></p></div>
+    </div>
+
+    <section class="section container" id="services" aria-labelledby="services-title">
+      <p class="eyebrow"><span class="square"></span>01 / Услуги</p>
+      <div class="section-heading"><h2 id="services-title">От идеи<br>до новоселья.</h2><p>Один проект — одна команда.<br>Помогаем пройти весь путь к своему дому<br class="desktop-break"> с ясным планом на каждом этапе.</p></div>
+      <div class="services-grid">
+        <a class="service" href="#contact" data-service="Проектирование"><div class="service-top"><svg class="service-icon"><use href="#plan"/></svg><span>01</span></div><h3>Проектирование</h3><p>Архитектура и планировки, в которых красота сочетается с удобством каждый день.</p><span class="service-bottom">От мысли — к точному плану<svg><use href="#arrow"/></svg></span></a>
+        <a class="service" href="#contact" data-service="Строительство"><div class="service-top"><svg class="service-icon"><use href="#house"/></svg><span>02</span></div><h3>Строительство</h3><p>Загородный дом от фундамента до кровли. Продуманные решения на каждом этапе.</p><span class="service-bottom">От плана — к вашему дому<svg><use href="#arrow"/></svg></span></a>
+        <a class="service" href="#contact" data-service="Отделка и интерьер"><div class="service-top"><svg class="service-icon"><use href="#interior"/></svg><span>03</span></div><h3>Отделка и интерьер</h3><p>Материалы, свет и фактуры, которые складываются в цельное и личное пространство.</p><span class="service-bottom">От стен — к ощущению дома<svg><use href="#arrow"/></svg></span></a>
+      </div>
+    </section>
+
+    <section class="projects-section section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <p class="eyebrow"><span class="square"></span>02 / Пространство для вдохновения</p>
+        <div class="section-heading projects-heading"><h2 id="projects-title">У каждого дома<br>свой характер.</h2><div class="project-filters" role="group" aria-label="Фильтр проектов"><button type="button" class="filter active" data-filter="all" aria-pressed="true">Все</button><button type="button" class="filter" data-filter="house" aria-pressed="false">Дома</button><button type="button" class="filter" data-filter="interior" aria-pressed="false">Интерьеры</button></div></div>
+        <div class="project-grid" id="project-grid">
+          <button class="project-card project-wide" type="button" data-category="house" data-project="residence" aria-label="Открыть концепт «Лесная резиденция»"><span class="project-image"><img src="./assets/hero.webp" width="2200" height="1467" loading="lazy" alt="Дом с тёмным фасадом среди деревьев"><span class="project-tag">Загородный дом</span><span class="project-open"><svg><use href="#arrow"/></svg></span></span><span class="project-caption"><span><strong>Лесная резиденция</strong><small>Современная архитектура · концепт</small></span><span class="project-area">240 м²</span></span></button>
+          <button class="project-card" type="button" data-category="interior" data-project="light" aria-label="Открыть концепт «Свет и пространство»"><span class="project-image"><img src="./assets/project-forest.webp" width="1200" height="800" loading="lazy" alt="Минималистичный интерьер с панорамными окнами"><span class="project-tag">Интерьер</span><span class="project-open"><svg><use href="#arrow"/></svg></span></span><span class="project-caption"><span><strong>Свет и пространство</strong><small>Натуральные фактуры · концепт</small></span><span class="project-area">180 м²</span></span></button>
+          <button class="project-card" type="button" data-category="interior" data-project="warm" aria-label="Открыть концепт «Тёплый минимализм»"><span class="project-image"><img src="./assets/project-modern.webp" width="1200" height="800" loading="lazy" alt="Светлая гостиная с деревянной лестницей"><span class="project-tag">Интерьер</span><span class="project-open"><svg><use href="#arrow"/></svg></span></span><span class="project-caption"><span><strong>Тёплый минимализм</strong><small>Пространство для семьи · концепт</small></span><span class="project-area">160 м²</span></span></button>
+        </div>
+        <p class="demo-caption">Концепции для вдохновения. Фотографии иллюстрируют направление дизайна и не являются портфолио выполненных работ.</p>
+      </div>
+    </section>
+
+    <section class="section container approach" id="approach" aria-labelledby="approach-title">
+      <div class="approach-intro"><p class="eyebrow"><span class="square"></span>03 / Наш подход</p><h2 id="approach-title">Хороший дом<br>начинается<br>с <span>доверия.</span></h2><p>Большой проект становится проще,<br>когда каждый следующий шаг понятен.</p><button class="text-link" type="button" data-open-estimate>Начать со стоимости<svg><use href="#arrow-right"/></svg></button><div class="architect-drawing" aria-hidden="true"><svg viewBox="0 0 420 210"><g fill="none" stroke="currentColor" stroke-width="1"><path d="m42 132 150-79 175 60-151 81Z"/><path d="M42 132V78l150-61 175 45v51M42 78l174 55 151-71M216 133v61M192 17v36M71 143V98l46 15v47m128 18v-42l79-36v43m-79 16 79-38M128 113v51l63 22v-55M42 113l-17 8m345-22 24 7M216 199v10M10 157l194 52m34-3 153-77"/><path stroke-dasharray="3 5" d="M192 0v70M5 66l411 111M17 144 375 1M17 183l373-59"/></g></svg><span>Всё начинается с точной линии.</span></div></div>
+      <div class="steps"><article class="step"><span class="step-number">01</span><div><h3>Сначала — слушаем</h3><p>Обсуждаем ваш образ жизни, пожелания и бюджет. Разбираемся, каким вы видите свой дом.</p><span class="step-label">Знакомство и задача</span></div></article><article class="step"><span class="step-number">02</span><div><h3>Затем — продумываем</h3><p>Собираем архитектуру, материалы и инженерные решения в один проект. Согласовываем смету и последовательность работ.</p><span class="step-label">Проект и план</span></div></article><article class="step"><span class="step-number">03</span><div><h3>И воплощаем в жизнь</h3><p>Двигаемся по согласованным этапам, показываем ход работ и проверяем детали перед передачей ключей.</p><span class="step-label">Строительство и результат</span></div></article></div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-intro"><p class="eyebrow"><span class="square"></span>04 / Первый шаг</p><h2 id="contact-title">Ваш дом<br>начинается<br>с <span>разговора.</span></h2><p>Расскажите о своей идее.<br>Поможем превратить её в понятный план.</p><div class="contact-note"><span class="status-dot"></span>Для тех, кто строит с мыслью о будущем</div></div>
+        <form class="brief-form" id="brief-form">
+          <h3>Давайте познакомимся</h3>
+          <p class="form-description">Несколько деталей о вас и будущем проекте.</p>
+          <div class="form-row"><label>Как вас зовут<input name="name" autocomplete="name" placeholder="Ваше имя" maxlength="80" required></label><label>Телефон<input name="phone" type="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" maxlength="30" pattern="\+?[0-9\s()\-]{7,30}" title="Введите номер телефона: цифры, пробелы, скобки или знак +" required></label></div>
+          <label>Что планируете?<select name="service" id="service-select"><option>Строительство</option><option>Проектирование</option><option>Отделка и интерьер</option></select></label>
+          <label>Пару слов о проекте<textarea name="message" rows="2" maxlength="2000" placeholder="Площадь, участок, пожелания — всё, что уже знаете"></textarea></label>
+          <button class="button button-orange form-submit" type="submit">Подготовить заявку<svg><use href="#arrow"/></svg></button>
+          <p class="form-disclaimer">Это демосайт: заявка будет подготовлена для скачивания. Данные не отправляются и не сохраняются на сервере.</p>
+          <div class="brief-result" id="brief-result" role="status" hidden><svg><use href="#check"/></svg><div><strong>Заявка готова</strong><p>Сохраните её, чтобы позже передать в строительную компанию.</p><button class="text-link" id="download-brief" type="button">Скачать заявку (.txt)<span aria-hidden="true">↓</span></button></div></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container"><a class="brand footer-brand" href="#"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M5 21 20 7l15 14v15H24V25h-8v11H5Z"/></svg></span><span class="brand-type">ОСНОВА<span>Дома для вашей жизни</span></span></a><p>Демонстрационный сайт · 2026<br>Название, услуги и концепции — примеры.</p><a class="back-top" href="#">Наверх ↑</a></footer>
+
+  <dialog class="modal estimate-modal" id="estimate-dialog" aria-labelledby="estimate-title"><button class="modal-close" type="button" data-close-dialog aria-label="Закрыть калькулятор">×</button><p class="eyebrow"><span class="square"></span>Начнём с ориентиров</p><h2 id="estimate-title">Сколько стоит<br>ваш будущий дом?</h2><p class="modal-description">Приблизительный расчёт для первого знакомства с бюджетом.</p><form id="estimate-form"><fieldset class="estimate-field"><legend>Технология строительства</legend><div class="technology-options"><label><input type="radio" name="technology" value="frame" checked><span>Каркас</span></label><label><input type="radio" name="technology" value="block"><span>Газобетон</span></label><label><input type="radio" name="technology" value="brick"><span>Кирпич</span></label></div></fieldset><div class="area-heading"><label for="area">Площадь дома</label><output id="area-value" for="area">150 м²</output></div><input type="range" id="area" name="area" min="60" max="400" step="10" value="150"><div class="range-labels"><span>60 м²</span><span>400 м²</span></div><label class="finish-toggle"><span><strong>Добавить чистовую отделку</strong><small>Полы, стены, потолки и базовая сантехника</small></span><input id="finish" name="finish" type="checkbox" role="switch"><span class="switch" aria-hidden="true"></span></label><div class="estimate-result" role="status" aria-live="polite"><span>Ориентировочный бюджет</span><strong id="estimate-price">6,1–7,4 млн ₽</strong><small>Условные цены для демонстрации. Не оферта.<br>Без стоимости участка, мебели и внешних коммуникаций.</small></div><button class="button button-orange" id="use-estimate" type="button">Обсудить такой проект<svg><use href="#arrow"/></svg></button></form></dialog>
+
+  <dialog class="modal project-modal" id="project-dialog" aria-labelledby="project-dialog-title"><button class="modal-close" type="button" data-close-dialog aria-label="Закрыть проект">×</button><img id="project-dialog-image" src="./assets/hero.webp" alt="" width="1200" height="800"><div class="project-modal-body"><p class="eyebrow">Иллюстративная концепция</p><h2 id="project-dialog-title">Лесная резиденция</h2><p id="project-dialog-description"></p><dl class="project-details"><div><dt>Площадь</dt><dd id="project-dialog-area"></dd></div><div><dt>Направление</dt><dd id="project-dialog-style"></dd></div></dl><button class="button button-orange" id="discuss-project" type="button">Хочу похожий проект<svg><use href="#arrow"/></svg></button></div></dialog>
+</body>
+</html>
